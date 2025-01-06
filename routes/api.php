@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::match(['get', 'post'], function (Request $request) {
+Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
