@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "relations",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
