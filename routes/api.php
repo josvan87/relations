@@ -15,15 +15,15 @@ Route::get('/user', function (Request $request) {
 
 
 
-Route::match(['get', 'post'],'/users', [UserController::class, 'index']);
-Route::match(['get', 'post'],'/users/{id}', [UserController::class, 'findOne']);
+Route::get('/users', [UserController::class, 'index']);
+Route::get('/users/{id}', [UserController::class, 'findOne']);
 
-Route::match(['get', 'post'],'/users', [UserController::class, 'insert']);
+Route::post('/users', [UserController::class, 'insert']);
 
 
-Route::match(['get', 'post'],'/addresses', [AddressController::class, 'index']);
-Route::match(['get', 'post'],'/addresses/{id}', [AddressController::class, 'findOne']);
-// Route::post('/addresses', [AddressController::class, 'insert']);
+Route::get('/addresses', [AddressController::class, 'index']);
+Route::get('/addresses/{id}', [AddressController::class, 'findOne']);
+Route::post('/addresses', [AddressController::class, 'insert']);
 
 
 
